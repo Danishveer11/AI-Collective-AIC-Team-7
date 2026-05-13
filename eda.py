@@ -8,9 +8,9 @@ sns.set_theme(style='whitegrid')
 plt.rcParams['figure.figsize'] = (10, 6)
 
 # read data
-apple_df = pd.read_csv("Apple_data.csv")
-amazon_df = pd.read_csv("Amazon_data.csv")
-tesla_df = pd.read_csv("Tesla_data.csv")
+apple_df = pd.read_csv("datasets/Apple_data.csv")
+amazon_df = pd.read_csv("datasets/Amazon_data.csv")
+tesla_df = pd.read_csv("datasets/Tesla_data.csv")
 
 # dictionary with key
 datasets = {
