@@ -231,3 +231,4 @@ print(result)
   # We trained our model on 80% of the data and tested it on the remaining 20% to evaluate how well it generalizes.
   # Then we built a prediction function that can take in new stock data and output whether the price will go up or down.
     # That function will later connect to the UI/frontend
+  # Baseline model outputs ROC curve and confusion matrix visuals
