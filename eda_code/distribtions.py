@@ -55,10 +55,19 @@ for name, df in datasets.items():
         plt.title(f'Boxplot of {col} - {name}')
         plt.savefig(f'{col}_distribution_{name}.png')
 
+
+edited_numerical_columns = [
+    'Close',
+    'High',
+    'Low',
+    'Open',
+    'Volume'
+]
+
 # Correlation Matrix Heatmap
 for name, df in datasets.items():
-    corr = df[numerical_columns + ['Target']].corr()
+    corr = df[edited_numerical_columns + ['Target']].corr()
     plt.figure(figsize=(12,8))
-    sns.heatmap(corr, annot=True, cmap='coolwarm')
+    sns.heatmap(corr, annot=True, fmt='.4f', cmap='coolwarm')
     plt.title(f'Correlation Heatmap - {name}')
     plt.savefig(f'corr_heatmap_{name}.png')
