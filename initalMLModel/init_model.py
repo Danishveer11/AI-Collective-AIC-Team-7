@@ -38,7 +38,7 @@ from sklearn.metrics import roc_curve, auc, ConfusionMatrixDisplay
 # -----------------------------
 # 1. LOAD DATASET
 # -----------------------------
-data = pd.read_csv("Amazon_data.csv")
+data = pd.read_csv("Tesla_data.csv")
 
 print("Dataset loaded successfully!")
 #print(data.head())
